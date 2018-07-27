@@ -1,7 +1,9 @@
 # PASD 2018
 ### - [Introducción](Introducción.md)
+  - [Ejercicio 1](Ejercicio1.md)
 ### - [Práctica 2 - Bases de datos mexicanas](Práctica2.md)
 ### - [Práctica 3 - Dataframes y gráficos](Práctica3.md)
+  - [Ejercicio 3](Ejercicio3.md)
 ### - [Práctica 4 - Excel y más gráficos](Práctica4.md)
 ### - [Práctica 5 - Más gráficos e intro a estadísticos](Práctica5.md)
 ### - [Práctica 6 - Introducción a la inferencia](Práctica6.md)
