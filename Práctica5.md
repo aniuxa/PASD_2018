@@ -123,7 +123,7 @@ q<-qplot(ing_cor, data=enigh_concentrado, geom="density",
 q
 ```
 
-![](Práctica5_files/figure-markdown_github/unnamed-chunk-8-1.png)
+![](práctica5_files/figure-markdown_github/unnamed-chunk-8-1.png)
 
 Si transformamos a logaritmo, tenemos una distribución más parecida a una normal
 
@@ -136,7 +136,7 @@ q
 
     ## Warning: Removed 6 rows containing non-finite values (stat_density).
 
-![](Práctica5_files/figure-markdown_github/unnamed-chunk-9-1.png)
+![](práctica5_files/figure-markdown_github/unnamed-chunk-9-1.png)
 
 <b>Bivariado</b>
 
@@ -151,7 +151,7 @@ q
 
     ## Warning: Removed 6 rows containing non-finite values (stat_density).
 
-![](Práctica5_files/figure-markdown_github/unnamed-chunk-10-1.png)
+![](práctica5_files/figure-markdown_github/unnamed-chunk-10-1.png)
 
 Podemos comparar la distribución incluyendo en la opción "fill" el nombre la de variable que tenemos de grupo. A veces lo mejor es incluirla como un factor
 
@@ -166,7 +166,7 @@ q
 
     ## Warning: Removed 6 rows containing non-finite values (stat_bin).
 
-![](Práctica5_files/figure-markdown_github/unnamed-chunk-11-1.png)
+![](práctica5_files/figure-markdown_github/unnamed-chunk-11-1.png)
 
 Análisis descriptivo
 ====================
