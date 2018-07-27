@@ -227,7 +227,7 @@ qq<-qplot(sexo_jefe, ing_pc, data = enigh_concentrado, geom = "boxplot")
 qq #imprimo mi objeto
 ```
 
-![](Práctica6_files/figure-markdown_github/unnamed-chunk-10-1.png)
+![](práctica6_files/figure-markdown_github/unnamed-chunk-10-1.png)
 <p>
 </p>
 Si cambiamos la escala a logarítmica, podemos observar mejor
@@ -238,7 +238,7 @@ qplot(sexo_jefe, log(ing_pc), data = enigh_concentrado, geom = "boxplot")
 
     ## Warning: Removed 6803 rows containing non-finite values (stat_boxplot).
 
-![](Práctica6_files/figure-markdown_github/unnamed-chunk-11-1.png)
+![](práctica6_files/figure-markdown_github/unnamed-chunk-11-1.png)
 
 Podemos también ver estas diferencias por sexo, con una tercera variable, que serán nuestros "facets""
 
@@ -248,7 +248,7 @@ qplot(sexo_jefe, log(ing_pc), data = enigh_concentrado, geom = "boxplot") + face
 
     ## Warning: Removed 6803 rows containing non-finite values (stat_boxplot).
 
-![](Práctica6_files/figure-markdown_github/unnamed-chunk-12-1.png)
+![](práctica6_files/figure-markdown_github/unnamed-chunk-12-1.png)
 
 Si no queremos usar el grid (que da control de qué va en horizontal y en lo vertical), podemos usar facet\_wrap
 
@@ -258,7 +258,7 @@ qplot(sexo_jefe, log(ing_pc), data = enigh_concentrado, geom = "boxplot") + face
 
     ## Warning: Removed 6803 rows containing non-finite values (stat_boxplot).
 
-![](Práctica6_files/figure-markdown_github/unnamed-chunk-13-1.png)
+![](práctica6_files/figure-markdown_github/unnamed-chunk-13-1.png)
 
 Prueba chi-cuadrado chi-sq
 ==========================
