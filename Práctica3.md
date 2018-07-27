@@ -295,19 +295,19 @@ El tenerlo como un objeto nos sirve sobre todo porque podemos aplicarle funcione
 plot(freq.school) # el gráfico más sencillo 
 ```
 
-![](Práctica3_files/figure-markdown_github/unnamed-chunk-11-1.png)
+![](práctica3_files/figure-markdown_github/unnamed-chunk-11-1.png)
 
 ``` r
 barplot(freq.school) # gráficos de barra
 ```
 
-![](Práctica3_files/figure-markdown_github/unnamed-chunk-11-2.png)
+![](práctica3_files/figure-markdown_github/unnamed-chunk-11-2.png)
 
 ``` r
 pie(freq.school) # gráfico de pastel
 ```
 
-![](Práctica3_files/figure-markdown_github/unnamed-chunk-11-3.png)
+![](práctica3_files/figure-markdown_github/unnamed-chunk-11-3.png)
 
 Vamos a modificar ligeramente los colores
 
@@ -315,25 +315,25 @@ Vamos a modificar ligeramente los colores
 barplot(freq.school, col=gray(0:8/8)) # gráficos de barra con escala de grises de oscuro a claros, (8 categorías)
 ```
 
-![](Práctica3_files/figure-markdown_github/unnamed-chunk-12-1.png)
+![](práctica3_files/figure-markdown_github/unnamed-chunk-12-1.png)
 
 ``` r
 barplot(freq.school, col=gray(8:0/8)) # gráficos de barra con escala de grises de claro a oscuros
 ```
 
-![](Práctica3_files/figure-markdown_github/unnamed-chunk-12-2.png)
+![](práctica3_files/figure-markdown_github/unnamed-chunk-12-2.png)
 
 ``` r
 barplot(freq.school, col=rainbow(8)) # gráfico de barras () ponemos el número de categorías
 ```
 
-![](Práctica3_files/figure-markdown_github/unnamed-chunk-12-3.png)
+![](práctica3_files/figure-markdown_github/unnamed-chunk-12-3.png)
 
 ``` r
 barplot(freq.school, col=heat.colors(8)) # gráfico de barras () ponemos el número de categorías
 ```
 
-![](Práctica3_files/figure-markdown_github/unnamed-chunk-12-4.png)
+![](práctica3_files/figure-markdown_github/unnamed-chunk-12-4.png)
 
 También podemos hacer nuestro propio vector de colores, para la paleta de nombres de colores que usa R, revisar <http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf>
 
@@ -345,13 +345,13 @@ my_colors2<-c("mediumorchid","mediumorchid1", "mediumorchid2", "mediumorchid3", 
 barplot(freq.school, col=my_colors1) # gráficos de barra con colores personalizados 1
 ```
 
-![](Práctica3_files/figure-markdown_github/unnamed-chunk-13-1.png)
+![](práctica3_files/figure-markdown_github/unnamed-chunk-13-1.png)
 
 ``` r
 barplot(freq.school, col=my_colors2) # gráficos de barra con colores personalizados 2
 ```
 
-![](Práctica3_files/figure-markdown_github/unnamed-chunk-13-2.png)
+![](práctica3_files/figure-markdown_github/unnamed-chunk-13-2.png)
 
 Para poner título
 
@@ -360,14 +360,14 @@ barplot(freq.school, col=gray.colors(8))
 title(main = list("Escuelas de pintores", font = 4))
 ```
 
-![](Práctica3_files/figure-markdown_github/unnamed-chunk-14-1.png)
+![](práctica3_files/figure-markdown_github/unnamed-chunk-14-1.png)
 
 ``` r
 # border :
 barplot(freq.school, border = "dark blue", col=my_colors2,  legend = rownames(freq.school))
 ```
 
-![](Práctica3_files/figure-markdown_github/unnamed-chunk-14-2.png)
+![](práctica3_files/figure-markdown_github/unnamed-chunk-14-2.png)
 
 Para hacer las barras horizontales le ponemos la opción "horiz=TRUE"
 
@@ -375,7 +375,7 @@ Para hacer las barras horizontales le ponemos la opción "horiz=TRUE"
 barplot(freq.school, border = "dark blue", col=my_colors2,  legend = rownames(freq.school), horiz=TRUE )
 ```
 
-![](Práctica3_files/figure-markdown_github/unnamed-chunk-15-1.png)
+![](práctica3_files/figure-markdown_github/unnamed-chunk-15-1.png)
 
 Gráficos bivariados
 ===================
@@ -405,7 +405,7 @@ barplot(freq.cars, main="Carros según bolsas de aire y tipo",
                       legend = rownames(freq.cars))
 ```
 
-![](Práctica3_files/figure-markdown_github/unnamed-chunk-17-1.png)
+![](práctica3_files/figure-markdown_github/unnamed-chunk-17-1.png)
 
 Para <b>barras agrupadas</b> Para estos gráficos usamos el mismo código, pero le activamos la opción "beside"
 
@@ -416,7 +416,7 @@ barplot(freq.cars, main="Carros según bolsas de aire y tipo",
                    beside=TRUE )
 ```
 
-![](Práctica3_files/figure-markdown_github/unnamed-chunk-18-1.png)
+![](práctica3_files/figure-markdown_github/unnamed-chunk-18-1.png)
 
 Para las barras apiladas es útil que lo veamos en términos de proporciones.
 
@@ -444,4 +444,4 @@ barplot(prop.cars, main="Carros según bolsas de aire y tipo",
                       legend = rownames(prop.cars))
 ```
 
-![](Práctica3_files/figure-markdown_github/unnamed-chunk-20-1.png)
+![](práctica3_files/figure-markdown_github/unnamed-chunk-20-1.png)
