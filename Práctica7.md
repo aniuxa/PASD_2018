@@ -92,7 +92,7 @@ q
 
     ## Warning: Removed 6 rows containing non-finite values (stat_density).
 
-![](Práctica7_files/figure-markdown_github/unnamed-chunk-6-1.png)
+![](práctica7_files/figure-markdown_github/unnamed-chunk-6-1.png)
 
 ¿Cómo establecemos que la organizaci´ón familiar como factor tiene un efecto sobre los ingresos per cápita del hogar?
 
@@ -158,7 +158,7 @@ Mide la fuerza de la relación lineal ¡Ojo con lineal!
 qplot(y=ing_cor_pc, x=part_laboral, data=enigh_concentrado)
 ```
 
-![](Práctica7_files/figure-markdown_github/unnamed-chunk-10-1.png)
+![](práctica7_files/figure-markdown_github/unnamed-chunk-10-1.png)
 
 ``` r
 cor(enigh_concentrado$ing_cor_pc, enigh_concentrado$part_laboral)
@@ -170,7 +170,7 @@ cor(enigh_concentrado$ing_cor_pc, enigh_concentrado$part_laboral)
 qplot(y=ing_cor_pc, x=edad_jefe, data=enigh_concentrado)
 ```
 
-![](Práctica7_files/figure-markdown_github/unnamed-chunk-11-1.png)
+![](práctica7_files/figure-markdown_github/unnamed-chunk-11-1.png)
 
 ``` r
 cor(enigh_concentrado$ing_cor_pc, enigh_concentrado$edad_jefe)
@@ -190,7 +190,7 @@ enigh_concentrado$log_ing_cor_pc<-log(enigh_concentrado$ing_cor_pc+1)
 hist(enigh_concentrado$log_ing_cor_pc)
 ```
 
-![](Práctica7_files/figure-markdown_github/unnamed-chunk-12-1.png)
+![](práctica7_files/figure-markdown_github/unnamed-chunk-12-1.png)
 
 Una vez transformada nuestra variable, corremos el modelo
 
@@ -229,7 +229,7 @@ summary(modelo) # show results
 plot(modelo)
 ```
 
-![](Práctica7_files/figure-markdown_github/unnamed-chunk-13-1.png)![](Práctica7_files/figure-markdown_github/unnamed-chunk-13-2.png)![](Práctica7_files/figure-markdown_github/unnamed-chunk-13-3.png)![](Práctica7_files/figure-markdown_github/unnamed-chunk-13-4.png)
+![](práctica7_files/figure-markdown_github/unnamed-chunk-13-1.png)![](práctica7_files/figure-markdown_github/unnamed-chunk-13-2.png)![](práctica7_files/figure-markdown_github/unnamed-chunk-13-3.png)![](práctica7_files/figure-markdown_github/unnamed-chunk-13-4.png)
 
 Diagnósticos
 ------------
@@ -279,7 +279,7 @@ outlierTest(modelo) # Bonferonni p-value for most extreme obs
 qqPlot(modelo, main="QQ Plot") #qq plot for studentized resid  (también sirve para normalidad)
 ```
 
-![](Práctica7_files/figure-markdown_github/unnamed-chunk-15-1.png)
+![](práctica7_files/figure-markdown_github/unnamed-chunk-15-1.png)
 
     ## [1]  5375 49327
 
@@ -299,7 +299,7 @@ ncvTest(modelo)
 spreadLevelPlot(modelo)
 ```
 
-![](Práctica7_files/figure-markdown_github/unnamed-chunk-16-1.png)
+![](práctica7_files/figure-markdown_github/unnamed-chunk-16-1.png)
 
     ## 
     ## Suggested power transformation:  2.578673
