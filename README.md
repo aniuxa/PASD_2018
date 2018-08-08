@@ -1,4 +1,4 @@
-# PASD 2018
+# PASD 2018 - Curso de Introducción a R
 ### - [Introducción](Introducción.md)
   - [Ejercicio 1](Ejercicio1.md)
 ### - [Práctica 2 - Bases de datos mexicanas](Práctica2.md)
